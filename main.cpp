@@ -20,7 +20,7 @@ int main() {
     string config;
     if (getenv("XDG_CONFIG_HOME") == NULL) {
         config = getenv("HOME");
-        config = config+"/.config";
+        config.append("/.config");
     }
     else config = getenv("XDG_CONFIG_HOME");
 
